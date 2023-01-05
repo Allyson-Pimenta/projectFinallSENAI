@@ -35,8 +35,8 @@ form.addEventListener('submit', (event) => {
     return form.submit(alert('Seus dados foram enviados com sucesso!'))
 });
 
-const botaoAzul =document.querySelector('.btn_blue')
-const botaoDark =document.querySelector('.btn_dark')
+const botaoAzul =document.querySelector('#blue')
+const botaoDark =document.querySelector('#dark')
 const body =document.querySelector('body')
 
 botaoAzul.addEventListener("click", bluemode)

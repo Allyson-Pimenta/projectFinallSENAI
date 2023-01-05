@@ -36,6 +36,11 @@ display: flex;
 
 #dark {
     margin-right: 10px;
+cursor: pointer;
+}
+
+#blue {
+    cursor: pointer;
 }
 
 .btn_dark{
