@@ -1,0 +1,478 @@
+:root {
+    --vermelho:#C30404;
+    --preto:#141414;
+    --branco:#fff;
+    --gelo:#e5e5e5;
+    --verdeForte:#1D271A;
+    --acizentado:#1d1e1f;
+    --rosa:silver;
+ }
+ 
+*{
+    margin: 0%;
+    padding: 0%;
+    border: 0%;
+    box-sizing: border-box;
+    font-size: 1.2rem;
+    list-style: none;
+    text-decoration: none;
+}
+@font-face {
+    font-family: font;
+    src: url(JAi_____.TTF);
+}
+body{
+    font-family:font;
+    overflow-x: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(https://img.freepik.com/fotos-gratis/resumo-luxo-macio-fundo-vermelho-projeto-de-layout-dos-namorados-de-natal-estudio-sala-modelo-da-web-relatorio-de-negocios-com-cor-gradiente-de-circulo-suave_1258-63947.jpg?w=996&t=st=1672849685~exp=1672850285~hmac=933afc3088ae28e534770ccf08b2787e86cc7a4bca68f804cba866940b3a7a02);
+}
+
+.botoes{
+display: flex;
+}
+
+#dark {
+    margin-right: 10px;
+}
+
+.btn_dark{
+    background-color: #141414;
+}
+
+.btn_blue{
+    background-color: blue;
+    
+}
+
+@media (min-width:360px){
+
+    a {
+        text-decoration: none;
+        color: var(--branco);
+    }
+
+    .header {
+        background-color: var(--preto);
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding:20px;
+    }
+
+    .logo {
+        border-radius: 50%;
+        box-shadow: 0px 0px 5px 0px var(--branco);
+        width: 100%;
+    }
+
+    .menu {
+        display: flex;
+        padding-top: 5px;
+    }
+
+    .menu li {
+        margin-left: 10px;
+            
+    }
+
+    .menu a {
+        padding: 10px;
+    }
+
+    .menu a :hover {
+        color: var(--vermelho);
+    }
+
+    #texto {
+        font-size: 1.4em;
+        text-align: center;
+        color:var(--branco);
+        background-color: var(--vermelho);
+        padding: 20px;
+    }
+
+
+        
+    img{
+        display: block;
+    }
+
+    .flex {
+        display: flex; 
+        flex-wrap:wrap;
+        align-items: center;       
+    }
+    
+    .flex > div {
+        display: flex;
+    }
+
+    .p{
+        display: flex;
+        justify-content: center;
+        text-decoration: underline;
+        text-transform: uppercase;
+        background-color: var(--gelo);
+        color: var(--verdeForte);
+        margin-bottom: 5px;
+        margin-top: 5px;
+        width: 100vw;
+    }
+
+    .flex> p {
+        display: flex;
+        justify-content: center;
+    }
+
+    .imagens{
+        display: flex;
+        flex-wrap:wrap;
+        width: 100vw;
+        justify-content: center;
+    }
+
+    .img {
+        height: 50vh;
+        width: 95vw;
+        border-radius: 5%;
+        padding: 10px;
+     }
+ 
+     .imgTwo{
+         height: 40vh;
+        width: 95vw;
+        padding: 10px;
+        border-radius: 5%;
+     }
+    
+     .rodape {
+        display: flex;
+        height: 20vh;
+        background-color: var(--preto);
+    }
+
+    .title {
+        display: flex;
+        flex: wrap;
+        width: 300px;
+        height: 20px;
+        font-size: 1.2em;
+    }
+
+    .title :hover {
+        color: var(--vermelho);
+    }
+    .subtitle {
+        display: flex;
+        position: absolute;
+        padding: 40px;
+        align-self: flex-end;
+        font-size: 0.7em;
+        color:var(--branco);
+    }
+
+    .voltar{
+        font-size:1em;
+        color: var(--vermelho);
+    }
+}
+@media (min-width:500px){
+
+    body{
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url(https://img.freepik.com/fotos-gratis/resumo-luxo-macio-fundo-vermelho-projeto-de-layout-dos-namorados-de-natal-estudio-sala-modelo-da-web-relatorio-de-negocios-com-cor-gradiente-de-circulo-suave_1258-63947.jpg?w=996&t=st=1672849685~exp=1672850285~hmac=933afc3088ae28e534770ccf08b2787e86cc7a4bca68f804cba866940b3a7a02);
+    }
+
+    a {
+        text-decoration: none;
+        color: var(--branco);
+    }
+
+    .header {
+        background-color: var(--preto);
+        display:flex;
+        flex-wrap:nowrap;
+        justify-content: space-between;
+        align-items: center;
+        padding:10px;
+    }
+
+    .logo {
+        border-radius: 50%;
+        box-shadow: 0px 0px 5px 0px var(--branco);
+        width: 80%;
+    }
+
+    .menu {
+        display: flex;
+    }
+
+    .menu li {
+        margin-left: 10px;
+    }
+
+   
+    .menu a {
+        padding: 10px;
+    }
+
+    .menu a :hover {
+        color: var(--vermelho);
+    }
+    
+    #texto {
+        font-size: 1em;
+        text-align: center;
+        padding: 20px;
+        color: var(--branco);
+        background-color: var(--vermelho);
+    }
+
+    .imagens {
+        display: flex;
+        flex: wrap;
+        padding: 0;
+        width: 100vw;
+        object-fit: cover;
+    }
+
+    img {
+        max-width: 100%;
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+    }
+
+    .flex {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;   
+    }
+    
+    .flex > div {
+        display: block;
+        flex: wrap;
+    }
+
+    .p {
+        display: flex;
+        text-transform: uppercase;
+        justify-content: center;
+        background-color: var(--gelo);
+        color: var(--preto);
+        text-decoration: underline;
+        margin-top: 5px;
+    }
+
+    .flex> p {
+        margin-bottom: 10px;
+        display: inline-block;
+        justify-content: center;
+        width: max-content;
+    }
+
+    
+    .img {
+        padding-right: 0;
+        height: 50vh;
+        width: 95vw;
+        object-fit: cover;
+        border-radius: 10%;
+        
+     }
+ 
+     .imgTwo{
+        padding-right: 0;
+        height: 50vh;
+        width: 95vw;
+        border-radius: 10%;
+        object-fit: fill;
+     }
+
+    .rodape {
+        display: flex;
+        height: 20vh;
+        background-color: var(--preto);
+    }
+
+    .title {
+        display: flex;
+        flex: wrap;
+        width: 300px;
+        height: 20px;
+        padding: 2%;
+        font-size: 1.2em;
+    }
+
+    .subtitle {
+        display: flex;
+        position: absolute;
+        padding: 30px;
+        margin-left: 15%;
+        align-self: flex-end;
+        color:var(--branco);
+    }
+
+    
+    .rodape {
+        display: flex;
+        height: 20vh;
+        background-color: var(--preto);
+    }
+
+    .title {
+        display: flex;
+        flex: wrap;
+        width: 300px;
+        height: 20px;
+        font-size: 1.2em;
+    }
+
+    .title :hover {
+        color: var(--vermelho);
+    }
+
+    .subtitle {
+        display: flex;
+        position: absolute;
+        padding: 30px;
+        align-self: flex-end;
+        font-size: 0.8em;
+        color:var(--branco);
+    }
+
+    .voltar {
+        margin-left: 25%;
+        font-size: 1.1em;
+        color: var(--vermelho);
+    }
+}
+
+@media (min-width:900px){
+    a {
+        text-decoration: none;
+        color: var(--branco);
+    }
+
+    .header {
+        background-color: #1d1e1f;
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding:20px;
+    }
+
+    .menu {
+        display: flex;
+    }
+
+    .menu li {
+        margin-left: 10px;
+    }   
+
+    .menu li a {
+        padding: 20px;
+        font-size: 1.4rem;
+    }
+
+    .menu :hover {
+        color: var(--vermelho);
+    }
+    
+
+    #texto {
+        font-size: 1.4em;
+        text-align: center;
+        padding: 20px;
+        color: var(--branco);
+        background-color: var(--vermelho);
+    }
+
+    .imagens {
+        width: 100vw;
+    }
+
+    img{
+        max-width: 100%;
+        display: block;
+    }
+
+    .flex {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .flex > div {
+        display: flex;
+        flex: wrap;     
+        justify-content: center;   
+    }
+
+    .img {
+        height: 50vh;
+       width: 55vw;
+       object-fit: unset;
+       border-radius: 10%;
+    }
+
+    .imgTwo{
+        height: 50vh;
+       width: 55vw;
+       border-radius: 10%;
+    }
+
+    .p {
+        background-color: var(--gelo);
+        color: var(--verdeForte);
+        width: 100%;
+        font-size: 1.2em;
+        justify-content: center;
+
+    }
+
+    .rodape {
+        display: flex;
+        height: 20vh;
+        background-color: var(--preto);
+    }
+
+    .title {
+        display: inline-block;
+        width: 300px;
+        height: 20px;
+        padding: 5px;
+        color: var(--gelo);
+        font-size: 0.9em;
+    }
+
+    .title :hover{
+        color: var(--vermelho);
+    }
+
+    .subtitle {
+        display: flex;
+        padding:  0px 50px 50px 0px;
+        margin-left: 33%;
+        color:var(--gelo);
+        font-size: 1em;
+    }
+
+    .voltar{
+        display: inline-block;
+        position: absolute;
+        right: 2%;
+        color: var(--vermelho);
+    }
+    .voltar :hover{
+        color: #fff;
+    }
+
+}

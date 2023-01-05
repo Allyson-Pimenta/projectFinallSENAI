@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/contatos.css">
+    <title>Contatos</title>
+    <script src="./js/form.js"></script>
+</head>
+<body>
+    <header class="header">
+        <a href="./index.html"><img class="logo" src="./img/logopimenta.png" alt="Uma logo"></a>
+         <nav> 
+
+             <ul class="menu">
+                 <li><a href="./index.html">Inicio</a></li>
+                 <li><a href="./servicos.html">Serviços</a></li>
+                 <li><a href="./contatos.html">Contatos</a></li>
+             </ul>
+           
+       </nav>
+     </header>
+    <main>
+        <div class="icones">
+            <a href="https://wa.me/5571983126414?text=Oi%2C+vim+pelo+seu+site%21" target="_blank"><img src="./img/zap.png" alt=""></a>
+            <a target="_blank" href="https://www.instagram.com/allysonpimensi/"><img src="./img/insta.png" alt=""></a>
+        </div>      
+    <div class="corpo">     
+     <form class="formulario">
+            <ul class="form">
+                  <form id="cadastro" action="#" method="POST" enctype="text/plain">
+
+                    <label for="nome">Nome:</label></br>
+                        <input class="area" id="nome" name="nome" type="text" placeholder="Digite seu nome"  required></br>
+                        <small></small>
+
+                    <label for="email">Email:</label></br>
+                        <input class="area"  id="email" name="e-mail" placeholder="seuemail@gmail.com" type="email" required><br/>
+                        <small></small>     
+                   
+                        <label for="password">Senha:</label></br>
+                    <input class="area" id="password" type="password" name="password" placeholder="Digite sua senha" minlength="8" required></br>
+                    
+                    <label for="confirm_password">Confirme sua senha:</label></br>
+                    <input class="area" id="confirm_password" type="password"  placeholder="Confirme sua senha" id="confirm_password" name="password">
+
+                    <div class="botoes">
+                     <input class="btn" type="submit" value="Enviar">
+                     <input class="btn" type="reset" value="Limpar">
+                    </div>
+                </ul>
+                </form>
+    </div>            
+    </main>
+     <footer class="rodape">
+        <h1 class="title"><a href="https://wa.me/5571983126414?text=Oi%2C+vim+pelo+seu+site%21" target="_blank">(71) 98312-6414</a></h1>   
+        <p class="subtitle">Feito por PimentaDesigns-2022</p>
+        <a class="voltar" href="index.html">Voltar</a>
+    </footer>
+</body>
+</html>
