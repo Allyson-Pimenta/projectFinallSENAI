@@ -23,34 +23,12 @@
 }
 body{
     font-family:font;
-    overflow-x: hidden;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-image: url(https://img.freepik.com/fotos-gratis/resumo-luxo-macio-fundo-vermelho-projeto-de-layout-dos-namorados-de-natal-estudio-sala-modelo-da-web-relatorio-de-negocios-com-cor-gradiente-de-circulo-suave_1258-63947.jpg?w=996&t=st=1672849685~exp=1672850285~hmac=933afc3088ae28e534770ccf08b2787e86cc7a4bca68f804cba866940b3a7a02);
 }
 
-.botoes{
-display: flex;
-}
-
-#dark {
-    margin-right: 10px;
-cursor: pointer;
-}
-
-#blue {
-    cursor: pointer;
-}
-
-.btn_dark{
-    background-color: #141414;
-}
-
-.btn_blue{
-    background-color: blue;
-    
-}
 
 @media (min-width:360px){
 
@@ -157,15 +135,27 @@ cursor: pointer;
      .rodape {
         display: flex;
         height: 20vh;
+        width: 100vw;
         background-color: var(--preto);
+    }
+
+    .rodape_items{
+        display: flex;
+        width: 100vw;
+        justify-content: none;
+    }
+
+    .tamanho {
+        font-size: 1.8em;
+        display: flex;
     }
 
     .title {
         display: flex;
         flex: wrap;
-        width: 300px;
+        width: 163px;
         height: 20px;
-        font-size: 1.2em;
+        font-size: 0.3em;
     }
 
     .title :hover {
@@ -173,17 +163,29 @@ cursor: pointer;
     }
     .subtitle {
         display: flex;
-        position: absolute;
-        padding: 40px;
-        align-self: flex-end;
+        margin-top: 30px;
+        margin-right: 10px;
+        padding:0px;
         font-size: 0.7em;
         color:var(--branco);
     }
 
     .voltar{
-        font-size:1em;
+        display: inline-block;
+        position: absolute;
+        right: 2%;
         color: var(--vermelho);
+        font-size:1em;
     }
+}
+
+@media (min-width:383px){
+.rodape_items{
+        width:100vw;
+}
+.voltar {
+    margin-left:10%;
+}
 }
 @media (min-width:500px){
 
@@ -301,43 +303,30 @@ cursor: pointer;
         object-fit: fill;
      }
 
-    .rodape {
-        display: flex;
-        height: 20vh;
-        background-color: var(--preto);
-    }
-
-    .title {
-        display: flex;
-        flex: wrap;
-        width: 300px;
-        height: 20px;
-        padding: 2%;
-        font-size: 1.2em;
-    }
-
-    .subtitle {
-        display: flex;
-        position: absolute;
-        padding: 30px;
-        margin-left: 15%;
-        align-self: flex-end;
-        color:var(--branco);
-    }
-
     
     .rodape {
         display: flex;
+        justify-content: center;
         height: 20vh;
+        width: 100vw;
         background-color: var(--preto);
+    }
+
+    .rodape_items{
+        display: flex;
+        width: 100vw;
+    }
+
+    .tamanho{
+        font-size: 1.8em;
     }
 
     .title {
         display: flex;
         flex: wrap;
-        width: 300px;
+        justify-content: left;
+        width: 146px;
         height: 20px;
-        font-size: 1.2em;
     }
 
     .title :hover {
@@ -346,9 +335,9 @@ cursor: pointer;
 
     .subtitle {
         display: flex;
-        position: absolute;
-        padding: 30px;
-        align-self: flex-end;
+        padding-bottom: 30px;
+        padding-right: 30px;
+        margin: 30px 30px 10px 0px;
         font-size: 0.8em;
         color:var(--branco);
     }
@@ -449,13 +438,22 @@ cursor: pointer;
         background-color: var(--preto);
     }
 
+    .rodape_items{
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+    }
+        
+    .tamanho{
+        font-size: 2em;
+    }
+
     .title {
         display: inline-block;
-        width: 300px;
+        width: 163px;
         height: 20px;
         padding: 5px;
         color: var(--gelo);
-        font-size: 0.9em;
     }
 
     .title :hover{
@@ -464,9 +462,9 @@ cursor: pointer;
 
     .subtitle {
         display: flex;
-        padding:  0px 50px 50px 0px;
-        margin-left: 33%;
         color:var(--gelo);
+        padding:0px 0px 30px 0px;
+        margin-left: 0;
         font-size: 1em;
     }
 
@@ -478,6 +476,28 @@ cursor: pointer;
     }
     .voltar :hover{
         color: #fff;
+    }
+
+}
+
+@media (min-width:901px){
+    .tamanho{
+        font-size: 2.5em;
+    }
+  
+    .title {
+        display: inline-block;
+        width: 300px;
+        height: 20px;
+        padding: 5px;
+        color: var(--gelo);
+    }
+
+    .subtitle {
+        display: flex;
+        color:var(--gelo);
+        margin-left: 0;
+        font-size: 1.5em;
     }
 
 }

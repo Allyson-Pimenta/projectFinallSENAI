@@ -1,5 +1,3 @@
-
-
 const form = document.querySelector('#cadastro')
 
 form.addEventListener('submit', (event) => {
@@ -34,21 +32,3 @@ form.addEventListener('submit', (event) => {
 
     return form.submit(alert('Seus dados foram enviados com sucesso!'))
 });
-
-const botaoAzul =document.querySelector('#blue')
-const botaoDark =document.querySelector('#dark')
-const body =document.querySelector('body')
-
-botaoAzul.addEventListener("click", bluemode)
-
-function bluemode(){
-    body.classList.add("btn_blue")
-    body.classList.remove("btn_dark")
-    document.querySelector('#blue').setAttribute('display:none')
-}
-botaoDark.addEventListener('click', darkmode)
-
-function darkmode(){
-    body.classList.add('btn_dark')
-    body.classList.remove('btn_blue')
-}
