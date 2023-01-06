@@ -23,6 +23,22 @@ body{
     font-family: font;
     overflow-x: hidden;
 }
+
+
+button {
+    border: none;    
+    background: none;
+    cursor: pointer;
+    margin-right: 10px;
+    align-items: center;
+}
+.btns{
+display: flex;
+width: 100vw;
+justify-content: center;
+}
+
+
 @media (min-width:360px){
 
     a {
@@ -84,6 +100,58 @@ body{
         max-width: 360px;
 
     }
+
+
+    .div_btn{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    .btn_sol_css {
+        color: #141414;
+    }
+    
+    .btn_sol_css .header {
+        background-color: rgb(108, 231, 108);
+        color: #141414;
+    }
+
+    .btn_sol_css .menu a {
+        color: #141414;
+    }
+
+    .btn_sol_css .menu a:hover{
+        color: #C30404;
+    }
+
+    .btn_sol_css .section {
+        background-color: var(--acizentado);
+    }
+
+    .btn_sol_css .rodape {
+        background-color: rgb(108, 231, 108);
+    }
+
+    .btn_sol_css .rodape .title a{
+    color:#141414;
+    }
+
+    .btn_sol_css .rodape .title a:hover{
+        color: red;
+    }
+
+
+    .btn_sol_css .subtitle {
+    color:#141414;
+    }
+
+    .btn_lua_css {
+        background-color: none;
+        color: #fff;
+    }
+    
 
     #gif {
         width: 360px;
@@ -177,6 +245,53 @@ body{
 
     }
 
+    .div_btn{
+        display: flex;
+        justify-content: center;
+    }
+
+    .btn_sol_css {
+        color: #141414;
+    }
+    
+    .btn_sol_css .header {
+        background-color: rgb(108, 231, 108);
+        color: #141414;
+    }
+
+    .btn_sol_css .menu a {
+        color: #141414;
+    }
+
+    .btn_sol_css .menu a:hover{
+        color: #C30404;
+    }
+
+    .btn_sol_css .section {
+        background-color: var(--acizentado);
+    }
+
+    .btn_sol_css .rodape {
+        background-color: rgb(108, 231, 108);
+    }
+
+    .btn_sol_css .rodape .title a{
+    color:#141414;
+    }
+
+    .btn_sol_css .rodape .title a:hover{
+        color: red;
+    }
+
+
+    .btn_sol_css .rodape .subtitle {
+    color:#141414;
+    }
+    .btn_lua_css {
+        background-color:none;
+        color: #fff;
+    }
+    
     #gif {
         width: 100vw;
     }
@@ -222,6 +337,7 @@ body{
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
+        color: #fff;
         padding:20px;
     }
 
@@ -247,23 +363,88 @@ body{
     }
 
     .p {
-        padding: 20px;
+        text-align: center;
         font-size: 1.4rem;
         color: var(--branco);
     }
 
     .h1 {
+        margin-right: 200px;
         font-size: 1.6rem;
         padding: 20px;
         color: var(--branco);
     }
 
+    .section{
+        flex-direction: row;
+    }
+
+    #quebrandoTela {
+        background-color: red;
+
+    }
+
+    .div_btn{
+        display: flex;
+        justify-content: right;
+    }
+
+    .menutext {
+    display: flex;
+    }
+
+    .btn_sol_css {
+        color: #141414;
+    }
+    
+    .btn_sol_css .header {
+        background-color: rgb(108, 231, 108);
+        color: #141414;
+    }
+
+    .btn_sol_css .menu a {
+        color: #141414;
+    }
+
+    .btn_sol_css .menu a:hover{
+        color: #C30404;
+    }
+
+    .btn_sol_css .section {
+        background-color: var(--acizentado);
+    }
+
+    .btn_sol_css .rodape {
+        background-color: rgb(108, 231, 108);
+    }
+
+    .btn_sol_css .rodape .title a{
+    color:#141414;
+    }
+
+    .btn_sol_css .rodape .title a:hover{
+        color: red;
+    }
+
+
+    .btn_sol_css .rodape .subtitle {
+    color:#141414;
+    }
+
+
+    .btn_lua_css main{
+        background-color: none;
+        color: #fff;
+    }
+    
+
+
     .section {
         background-color:var(--vermelho);
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: stretch;
-        height: 40vh;
+        height: 50vh;
         flex-wrap: wrap;
     }
 
@@ -300,7 +481,7 @@ body{
         width: 300px;
         height: 20px;
         padding: 5px;
-        color: var(--gelo);
+        color: #e5e5e5;
         font-size: 1.2em;
     }
 

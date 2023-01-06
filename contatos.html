@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/contatos.css">
     <title>Contatos</title>
-    <script src="./js/form.js"></script>
+    <script src="./js/form.js" defer></script>
+    <script src="./js/changeTheme.js" defer></script>
 </head>
 <body>
     <header class="header">
@@ -22,10 +23,17 @@
        </nav>
      </header>
     <main>
+    <div class="div_botoes">
         <div class="icones">
             <a href="https://wa.me/5571983126414?text=Oi%2C+vim+pelo+seu+site%21" target="_blank"><img src="./img/zap.png" alt=""></a>
             <a target="_blank" href="https://www.instagram.com/allysonpimensi/"><img src="./img/insta.png" alt=""></a>
-        </div>      
+          
+        </div> 
+        <div class="butoes">
+            <button  id="butaoLight" type="button"><img src="img/sol.svg" ></button>
+            <button id="butaoblue" type="button"><img src="img/lua.png"></button>
+          </div>  
+    </div>
     <div class="corpo">     
      <form class="formulario">
             <ul class="form">
@@ -58,5 +66,9 @@
         <p class="subtitle">Feito por PimentaDesigns-2022</p>
         <a class="voltar" href="index.html">Voltar</a>
     </footer>
+    <div id="quebrandoTela">
+
+        
+    </div>
 </body>
 </html>

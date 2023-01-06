@@ -32,3 +32,4 @@ form.addEventListener('submit', (event) => {
 
     return form.submit(alert('Seus dados foram enviados com sucesso!'))
 });
+

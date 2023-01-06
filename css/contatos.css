@@ -59,8 +59,8 @@ body{
     .icones {
         display:flex;
         flex:wrap;
+        width: 100%;
         justify-content: center;
-        background-color: #C30404;
     }
 
     .icones a {
@@ -71,6 +71,79 @@ body{
         padding: 5px;
         background-color: #1d1e1f;
     }
+
+    .div_botoes{
+        display: flex;
+        width: 100vw;
+        background-color: #C30404;
+        justify-content: center;
+
+    }
+
+    .butoes{
+        display: flex;
+        justify-items: right;
+    }
+
+    button {
+        display: flex;
+        border: none;
+        background: none;
+
+    }
+
+   
+    .btn_sol_css {
+        color: #141414;
+    }
+    
+    .btn_sol_css .header {
+        background-color: rgb(108, 231, 108);
+        color: #141414;
+    }
+
+    .btn_sol_css .menu a {
+        color: #141414;
+    }
+
+    .btn_sol_css .menu a:hover{
+        color: #C30404;
+    }
+
+    .btn_sol_css .div_botoes {
+        background-color: #1d1e1f;
+    }    
+
+    .btn_sol_css .rodape {
+        background-color: rgb(108, 231, 108);
+    }
+
+    .btn_sol_css .rodape .title a{
+    color:#141414;
+    }
+
+    .btn_sol_css .rodape .title a:hover{
+        color: red;
+    }
+
+
+    .btn_sol_css .rodape .subtitle {
+    color:#141414;
+    }
+
+    .btn_sol_css .rodape_items .voltar{
+        color: #141414;
+    }
+    
+    .btn_sol_css .rodape_items .voltar:hover{
+        color: red;
+    }
+
+    .btn_lua_css {
+        background-color: #141414;
+        color: #fff;
+    }
+    
 
     .formulario {
         display: flex;
@@ -187,7 +260,7 @@ body{
         display:flex;
         flex:wrap;
         justify-content: center;
-        background-color: #C30404;
+        margin-left: 50px;
     }
 
     .icones a {
@@ -321,7 +394,6 @@ body{
         display:flex;
         flex:wrap;
         justify-content: center;
-        background-color: #C30404;
     }
 
     .icones a {
