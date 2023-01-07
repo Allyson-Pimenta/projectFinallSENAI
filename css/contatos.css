@@ -64,7 +64,7 @@ body{
     }
 
     .icones a {
-        padding-left: 20px;
+        padding-left: 10px;
     }
 
     .icones :hover {
@@ -72,17 +72,28 @@ body{
         background-color: #1d1e1f;
     }
 
+    .section_main{
+        background-color: #C30404;
+        width: 100vw;
+    }
+
     .div_botoes{
         display: flex;
         width: 100vw;
-        background-color: #C30404;
         justify-content: center;
 
     }
 
     .butoes{
         display: flex;
-        justify-items: right;
+        width: 100vw;
+        justify-content: center;
+    }
+
+    .btns_mode{
+        border: none;
+        background-color: none;
+        margin-left: 10px;
     }
 
     button {
@@ -110,12 +121,20 @@ body{
         color: #C30404;
     }
 
-    .btn_sol_css .div_botoes {
+    .btn_sol_css .section_main {
         background-color: #1d1e1f;
     }    
 
+    .btn_sol_css .btns_mode img:hover{
+        padding: 5px;
+    }
+
     .btn_sol_css .rodape {
         background-color: rgb(108, 231, 108);
+    }
+
+    .btn_sol_css .area {
+        box-shadow: green 0px 0px 5px 0px;
     }
 
     .btn_sol_css .rodape .title a{
@@ -140,12 +159,12 @@ body{
     }
 
     .btn_lua_css {
-        background-color: #141414;
+        background-color: none;
         color: #fff;
     }
     
 
-    .formulario {
+    .corpo {
         display: flex;
         flex: wrap;
    background-image: url(https://img.freepik.com/vetores-gratis/ilustracao-da-arte-desenhada-a-mao-do-logotipo-do-red-hot-chili_56104-894.jpg?w=740&t=st=1672315970~exp=1672316570~hmac=d52b77c64bece3bfc4e16994651bad78b3478016c0581667248b0d0e100adb21);
@@ -153,16 +172,32 @@ body{
     background-repeat: no-repeat;
     }
 
-    .form {
+    .form_css {
         padding: 30px;
         font-size: 1.3em;
         color: #141414;
     }
 
     .area{
-        border-radius: 30px;
+        border-radius: 20px;
+        padding: 5px;
         border: 1px solid gray;
-        box-shadow: #C30404 0px 0px 5px 0px;
+        
+    }
+
+    .area:focus{
+        box-shadow: 0px 0px 15px 0px yellow;
+    }
+
+    label {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+    }
+
+    .btn_container{
+        display: flex;
+        justify-content: center;
     }
 
     .btn {
@@ -196,7 +231,10 @@ body{
         flex: wrap;
         width: 300px;
         height: 20px;
-        font-size: 1.2em;
+    }
+
+    .title a {
+        font-size: 0.4em;
     }
 
     .title :hover {
@@ -260,42 +298,57 @@ body{
         display:flex;
         flex:wrap;
         justify-content: center;
-        margin-left: 50px;
     }
 
     .icones a {
-        padding-left: 20px;
+        padding-left: 10px;
     }
 
-    .formulario {
+    .btns_mode{
+        margin-left: 0;
+    }
+
+    .btns_mode img{
+        margin-left: 10px;
+    }
+
+    .corpo {
         display: flex;
-        flex: wrap;
+        flex-wrap: wrap;
+        width:100vw;
+        justify-content: center;
    background-image: url(https://img.freepik.com/vetores-gratis/ilustracao-da-arte-desenhada-a-mao-do-logotipo-do-red-hot-chili_56104-894.jpg?w=740&t=st=1672315970~exp=1672316570~hmac=d52b77c64bece3bfc4e16994651bad78b3478016c0581667248b0d0e100adb21);
-   background-size: 70vw;
+   background-size: 100vw;
    background-position: center;
    background-repeat: no-repeat;
     }
 
-    .form {
-        padding: 20px 0px 30px 70px;
+    .form_css {
+        width: 400px;
+        margin: 20px;
         font-size: 1.3em;
         color: #141414;
     }
 
     .area{
-        border: gray;
+        padding: 10px;
+    }
+
+    .div_container{
+        width: 100vw;
+        display: flex;
+        justify-content: center;
     }
 
     .btn {
-        position: relative;
-        display: inline-block;
-        align-content: center;
+        width: 100px;
+        height: 40px;
+        align-items: center;
         background-color: #C30404;
-        left: 20%;
         color: #fff;
+        padding: 5px;
         border-radius: 10%;
-        margin-top: 20px;
-        margin-right: 20px;
+
     }
 
     .botoes {
@@ -393,19 +446,32 @@ body{
     .icones {
         display:flex;
         flex:wrap;
+        margin-left: 0;
         justify-content: center;
     }
 
     .icones a {
-        padding-left: 20px;
+        padding-left: 10px;
+    }
+
+    .btns_mode{
+        margin-left:0px ;
+    }
+
+    .btns_mode img{
+        margin-left: 10px;
+    }
+
+    .btns_mode img:hover{
+        padding: 5px;
     }
 
     .formulario {
         display: flex;
         flex: wrap;
-        height: 70vh;
+        width:100vw;
    background-image: url(https://img.freepik.com/vetores-gratis/ilustracao-da-arte-desenhada-a-mao-do-logotipo-do-red-hot-chili_56104-894.jpg?w=740&t=st=1672315970~exp=1672316570~hmac=d52b77c64bece3bfc4e16994651bad78b3478016c0581667248b0d0e100adb21);
-    background-size: 30vw;
+    background-size: 100vw;
     background-position: center;
     background-repeat: no-repeat;
     }
@@ -417,9 +483,7 @@ body{
         color: #141414;
     }
 
-    .corpo{
-        height: 90vh;
-    }
+
 
     .area {
         border:gray 1px solid;
@@ -427,20 +491,21 @@ body{
         box-shadow: #c30404 0px 0px 5px 0px;
     }
 
-    .botoes {
+    .div_botoes{
+        width: 100vw;
         display: flex;
     }
 
-    .btn {
+    .botoes {
         display: flex;
-        align-content: center;
-        border: 2px black solid;
-        background-color: #C30404;
+        justify-content: left;
+    }
+
+    .btn {
         color: #fff;
-        border-radius: 10%;
-        margin-top: 20px;
-        margin-right: 20px;
-        left: 0%;
+        border-radius: 20px;
+        padding: 5px;
+        margin:0px;
     }
 
     .btn:hover{
