@@ -54,6 +54,7 @@ body{
 
     .menu :hover {
         color: #C30404;
+        transition: 0.7s ease;
     }
 
     .icones {
@@ -70,6 +71,7 @@ body{
     .icones :hover {
         padding: 5px;
         background-color: #1d1e1f;
+        transition: 0.7s ease;
     }
 
     .section_main{
@@ -182,7 +184,6 @@ body{
         border-radius: 20px;
         padding: 5px;
         border: 1px solid gray;
-        
     }
 
     .area:focus{
@@ -204,14 +205,16 @@ body{
         display: flex;
         align-content: center;
         background-color: #C30404;
+        border: 2px solid gray;
         color: #fff;
-        border-radius: 10%;
-        margin-top: 20px;
+        border-radius: 20px;
         margin-right: 20px;
+        padding: 5px;
     }
 
     .btn:hover{
         background-color: red;
+        transition: 0.7s ease;
         padding: 2px;
     }
 
@@ -222,19 +225,24 @@ body{
 
     .rodape {
         display: flex;
+        flex-direction: column;
         height: 20vh;
         background-color: #141414;
+    }
+
+    .rodape_item{
+        display: flex;
+        justify-content: space-between;
     }
 
     .title {
         display: flex;
         flex: wrap;
-        width: 300px;
         height: 20px;
     }
 
     .title a {
-        font-size: 0.4em;
+        font-size: 0.8rem;
     }
 
     .title :hover {
@@ -243,10 +251,9 @@ body{
 
     .subtitle {
         display: flex;
-        position: absolute;
-        padding: 30px;
+        padding-top: 20px;
         font-size: 0.8em;
-        align-self: flex-end;
+        align-self: center;
         color:white;
     }
 
@@ -331,7 +338,7 @@ body{
     }
 
     .area{
-        padding: 10px;
+        padding: 5px;
     }
 
     .div_container{
@@ -347,7 +354,7 @@ body{
         background-color: #C30404;
         color: #fff;
         padding: 5px;
-        border-radius: 10%;
+        border-radius: 20px;
 
     }
 
@@ -366,23 +373,23 @@ body{
         background-color: #141414;
     }
 
+    .rodape_item{
+        align-items: center;
+    }
+
     .title {
         display: flex;
         flex: wrap;
-        width: 300px;
         height: 20px;
-        padding: 2%;
         font-size: 0.6em;
     }
 
     .subtitle {
         display: flex;
         position: absolute;
-        padding: 30px;
-        margin-left: 15%;
-        margin-top: 10px;
         font-size: 0.8em;
-        align-self: flex-end;
+        padding-top: 30px;
+        align-self:center;
         color:white;
     }
 
@@ -391,11 +398,12 @@ body{
         position: absolute;
         right:2%;
         font-size: 1.1em;
-        color: #C30404;
+        color: #fff;
     }
 
-    .voltar :hover {
-        color: #fff;
+    .voltar:hover {
+        color: #C30404;
+        transition: 0.7s ease;
     }
 }
 
@@ -502,48 +510,54 @@ body{
     }
 
     .btn {
+        border: gray 2px solid;
         color: #fff;
         border-radius: 20px;
         padding: 5px;
-        margin:0px;
+        margin-left : 10px;
     }
 
     .btn:hover{
         background-color: red;
+        transition: 0.7s ease;
         padding: 5px;
     }
 
     .rodape {
         display: flex;
-        height: 20vh;
+        justify-content: space-between;
         background-color: #141414;
     }
 
-    .title {
+    .rodape_item{
         display: flex;
-        flex: wrap;
-        width: 300px;
-        height: 20px;
-        padding: 10px;
-        color: #e5e5e5;
-        font-size: 1.2em;
+        flex-direction: column;
+        align-items: baseline;
+        height: 100px;
     }
+
+    .title {
+        flex: wrap; 
+        color: #e5e5e5;
+    }
+
+    .title a {
+        font-size: 1.2em;
+
+    }
+
 
     .subtitle {
         display: flex;
         flex: wrap;
-        position: absolute;
-        padding-top: 0px;
-        margin-left: 30%;
-        align-self: flex-end;
+        padding-top: 30px;
+        align-self: center;
         color:#e5e5e5;
-        font-size: 1.2em;
+        font-size: 1.2rem;
     }
 
     .voltar{
-        position: absolute;
-        padding: 10px;
-        right: 1%;
+        right: 0;
         color: #C30404;
     }
 

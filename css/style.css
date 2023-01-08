@@ -38,6 +38,23 @@ width: 100vw;
 justify-content: center;
 }
 
+.pai {
+    display: flex;
+    width: 100vw;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+
+#menu {
+    display: flex;
+}
+
+.logo-img{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+
 
 @media (min-width:360px){
 
@@ -60,22 +77,19 @@ justify-content: center;
         box-shadow: 0px 0px 5px 0px var(--branco);
     }
 
-    .menu {
-        display: flex;
-        padding-top: 5px;
-    }
 
-    .menu li {
+    .pai li {
         margin-left: 10px;
         
     }
 
-    .menu a {
+    .pai a {
         padding: 10px;
     }
 
-    .menu :hover{
+    .pai :hover{
         color: var(--vermelho);
+        transition: 0.7s ease;
     }
 
     .p {
@@ -124,6 +138,7 @@ justify-content: center;
 
     .btn_sol_css .menu a:hover{
         color: #C30404;
+        transition: 0.7s ease;
     }
 
     .btn_sol_css .section {
@@ -140,6 +155,10 @@ justify-content: center;
 
     .btn_sol_css .rodape .title a:hover{
         color: red;
+    }
+
+    .btn_sol_css .title a:hover {
+        transition: 0.7s ease;
     }
 
 
@@ -159,24 +178,25 @@ justify-content: center;
 
     .rodape {
         display: flex;
+        flex-direction: column;
         height: 20vh;
         background-color: var(--preto);
     }
 
     .title {
-        display: flex;
-        flex: wrap;
         width: 300px;
         height: 20px;
-        font-size: 1.2em;
+    }
+
+    .title a {
+        font-size: 0.8em;
     }
 
     .subtitle {
         display: flex;
-        position: absolute;
-        padding: 40px;
         font-size: 0.7em;
-        align-self: flex-end;
+        padding-top: 10px;
+        align-self: center;
         color:var(--branco);
     }
 }
@@ -191,35 +211,24 @@ justify-content: center;
         background-color: var(--preto);
         display:flex;
         flex-wrap: wrap;
-        justify-content: space-between;
         align-items: center;
         padding:20px;
     }
 
-    .logo {
-        margin-left: 30vw;
-        border-radius: 50%;
-        box-shadow: 0px 0px 5px 0px var(--branco);
-    }
-
-    .pai {
-       margin-left:10%;
-    }
-
-    .menu {
+    .logo-img {
         display: flex;
         justify-content: center;
     }
 
-    .menu li {
+    #menu li {
         margin-left: 10px;
     }
 
    
-    .menu a {
+    #menu a {
         padding: 10px;
     }
-    .menu :hover{
+    #menu :hover{
         color: var(--vermelho);
     }
     .p {
@@ -304,11 +313,14 @@ justify-content: center;
 
     .title {
         display: flex;
-        flex: wrap;
+        flex-wrap: wrap;
+        flex-direction: column;
         width: 300px;
         height: 20px;
-        padding: 2%;
-        font-size: 1.2em;
+    }
+
+    .title a {
+        font-size: 1rem;
     }
 
     .title :hover{
@@ -317,10 +329,7 @@ justify-content: center;
     
     .subtitle {
         display: flex;
-        position: absolute;
-        padding: 30px;
-        margin-left: 15%;
-        align-self: flex-end;
+        align-self: center;
         color:var(--branco);
     }
 }
@@ -444,7 +453,6 @@ justify-content: center;
         display: flex;
         flex-direction: row;
         align-items: stretch;
-        height: 50vh;
         flex-wrap: wrap;
     }
 
@@ -465,31 +473,28 @@ justify-content: center;
     #gif {
         display: flex;
         flex:nowrap;
-        width: fit-content;
-
     }
 
     .rodape {
         display: flex;
-        height: 20vh;
+        flex-direction: column;
         background-color: var(--preto);
     }
 
     .title {
         display: flex;
-        flex: wrap;
-        width: 300px;
+        flex-wrap: wrap;
         height: 20px;
         padding: 5px;
         color: #e5e5e5;
-        font-size: 1.2em;
+    }
+
+    .title a {
+        font-size: 1.1rem;
     }
 
     .subtitle {
         display: flex;
-        position: absolute;
-        padding:  0px 50px 30px 0px;
-        margin-left: 30%;
         align-self: center;
         color:var(--gelo);
         font-size: 1.1em;
