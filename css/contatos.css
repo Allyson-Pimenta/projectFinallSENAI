@@ -139,12 +139,23 @@ body{
         box-shadow: green 0px 0px 5px 0px;
     }
 
-    .btn_sol_css .rodape .title a{
-    color:#141414;
+    .btn_sol_css .rodape_item a {
+        color: #141414;
     }
 
-    .btn_sol_css .rodape .title a:hover{
+    .btn_sol_css .rodape_item  a:hover{
         color: red;
+        transition: 0.7s ease;
+
+    }
+
+    .btn_sol_css #back {
+        color: black;
+    }
+
+    .btn_sol_css #back:hover{
+        color: red;
+        transition: 0.7s ease;
     }
 
 
@@ -233,6 +244,7 @@ body{
     .rodape_item{
         display: flex;
         justify-content: space-between;
+        align-items: center;
     }
 
     .title {
@@ -248,10 +260,12 @@ body{
     .title :hover {
         color: #C30404;
     }
-
+    .subtituloPri {
+        display: flex;
+        justify-content:center ;
+    }
     .subtitle {
         display: flex;
-        padding-top: 20px;
         font-size: 0.8em;
         align-self: center;
         color:white;
@@ -324,10 +338,7 @@ body{
         flex-wrap: wrap;
         width:100vw;
         justify-content: center;
-   background-image: url(https://img.freepik.com/vetores-gratis/ilustracao-da-arte-desenhada-a-mao-do-logotipo-do-red-hot-chili_56104-894.jpg?w=740&t=st=1672315970~exp=1672316570~hmac=d52b77c64bece3bfc4e16994651bad78b3478016c0581667248b0d0e100adb21);
-   background-size: 100vw;
-   background-position: center;
-   background-repeat: no-repeat;
+
     }
 
     .form_css {
@@ -335,6 +346,7 @@ body{
         margin: 20px;
         font-size: 1.3em;
         color: #141414;
+      
     }
 
     .area{
@@ -395,8 +407,6 @@ body{
 
     .voltar {
         display: flex; 
-        position: absolute;
-        right:2%;
         font-size: 1.1em;
         color: #fff;
     }
@@ -474,14 +484,18 @@ body{
         padding: 5px;
     }
 
+    .corpo{
+        background-image: url(https://img.freepik.com/vetores-gratis/ilustracao-da-arte-desenhada-a-mao-do-logotipo-do-red-hot-chili_56104-894.jpg?w=740&t=st=1672315970~exp=1672316570~hmac=d52b77c64bece3bfc4e16994651bad78b3478016c0581667248b0d0e100adb21);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
     .formulario {
         display: flex;
         flex: wrap;
         width:100vw;
-   background-image: url(https://img.freepik.com/vetores-gratis/ilustracao-da-arte-desenhada-a-mao-do-logotipo-do-red-hot-chili_56104-894.jpg?w=740&t=st=1672315970~exp=1672316570~hmac=d52b77c64bece3bfc4e16994651bad78b3478016c0581667248b0d0e100adb21);
-    background-size: 100vw;
-    background-position: center;
-    background-repeat: no-repeat;
+
     }
 
     .form {
@@ -525,15 +539,11 @@ body{
 
     .rodape {
         display: flex;
-        justify-content: space-between;
         background-color: #141414;
     }
 
     .rodape_item{
         display: flex;
-        flex-direction: column;
-        align-items: baseline;
-        height: 100px;
     }
 
     .title {
@@ -565,3 +575,11 @@ body{
         color: #fff;
     }
 }
+
+@media (min-width:901px){
+    .rodape_item a{
+        font-size: 1.7rem;
+    }
+
+}
+
