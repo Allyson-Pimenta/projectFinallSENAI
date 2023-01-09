@@ -19,7 +19,6 @@ btnDark.addEventListener("click", modoDark)
 function modoDark(){
     mudandoBody.classList.add('btn_lua_css')
     mudandoBody.classList.remove('btn_sol_css')
-
 }
 
 

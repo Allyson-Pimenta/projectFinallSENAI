@@ -13,7 +13,6 @@ const reg = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g
 
     if (name ==""){
         document.querySelector('#name').style.boxShadow = "0px 0px 15px 5px red"
-        alert('O campo nome é obrigatório')
         return false
     }else {
         document.querySelector('#name').style.boxShadow = "0px 0px 15px 5px  green"
@@ -21,13 +20,11 @@ const reg = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g
 
     if (email =="") {
         document.querySelector('#email').style.boxShadow = "0px 0px 15px 5px  red"
-        alert('O campo e-mail é obrigatório!')
         return false
     }
 
     if (!reg.test(email)){
         document.querySelector('#email').style.boxShadow = "0px 0px 15px 5pxred"
-        alert('O e-mail não é válido!')
         return false
     }else{
         document.querySelector('#email').style.boxShadow = "0px 5px 15px 5px  green"
@@ -35,7 +32,6 @@ const reg = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g
 
     if (senha ==""){
         document.querySelector('#senha').style.boxShadow = "0px 0px 15px 5px  red"
-        alert('O campo senha é obrigatório!')
         return false
         }else{
         document.querySelector('#senha').style.boxShadow = "0px 5px 15px 5px  green"
@@ -43,7 +39,6 @@ const reg = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g
 
     if (senha !=conSenha){
         senha('#senha').style.boxShadow = "0px 0px 15px 5px  red"
-        alert('As senhas não coicidem!')
         return false
     }else{
         document.querySelector('#senha').style.boxShadow = "0px 5px 15px 5px  green"

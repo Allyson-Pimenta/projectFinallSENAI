@@ -19,7 +19,7 @@ body{
 }
 
 footer {
-    height: 20vh;
+    height: 10vh;
 }
 
 @media (min-width:360px){
@@ -111,6 +111,10 @@ footer {
         border: none;
         background-color: none;
         margin-left: 10px;
+    }
+
+    .btns_mode:hover {
+    position: relative;
     }
 
     button {
@@ -490,6 +494,8 @@ footer {
         margin-left: 0;
         justify-content: center;
     }
+
+
 
     .icones a {
         padding-left: 10px;
