@@ -18,6 +18,10 @@ body{
     overflow-x: hidden;
 }
 
+footer {
+    height: 20vh;
+}
+
 @media (min-width:360px){
 
     a {
@@ -37,8 +41,19 @@ body{
     .logo {
         border-radius: 50%;
         box-shadow: 0px 0px 5px 0px #fff;
+        margin-bottom: 10px;
     }
 
+    .logo:hover {
+        box-shadow: 0px 0px 5px 0px red;
+        transition: 0.7s ease;
+    }
+
+
+    .menuPri{
+        display:flex;
+        padding-top: 10px;
+    }
     .menu {
         display: flex;
     }
@@ -68,7 +83,7 @@ body{
         padding-left: 10px;
     }
 
-    .icones :hover {
+    .icones a:hover {
         padding: 5px;
         background-color: #1d1e1f;
         transition: 0.7s ease;
@@ -237,7 +252,6 @@ body{
     .rodape {
         display: flex;
         flex-direction: column;
-        height: 20vh;
         background-color: #141414;
     }
 
@@ -250,16 +264,27 @@ body{
     .title {
         display: flex;
         flex: wrap;
-        height: 20px;
     }
 
     .title a {
+        color: #fff;
         font-size: 0.8rem;
     }
 
-    .title :hover {
+    .title a:hover {
         color: #C30404;
+        transition: 0.7s ease;
     }
+
+    #back {
+        color: #fff;
+    }
+
+    #back:hover {
+        transition: 0.7s ease;
+        color: red;
+    }
+
     .subtituloPri {
         display: flex;
         justify-content:center ;
@@ -381,7 +406,6 @@ body{
 
     .rodape {
         display: flex;
-        height: 20vh;
         background-color: #141414;
     }
 
@@ -392,15 +416,14 @@ body{
     .title {
         display: flex;
         flex: wrap;
-        height: 20px;
         font-size: 0.6em;
     }
 
+
+
     .subtitle {
         display: flex;
-        position: absolute;
         font-size: 0.8em;
-        padding-top: 30px;
         align-self:center;
         color:white;
     }
@@ -552,7 +575,7 @@ body{
     }
 
     .title a {
-        font-size: 1.2em;
+        font-size: 1.4em;
 
     }
 
@@ -560,7 +583,6 @@ body{
     .subtitle {
         display: flex;
         flex: wrap;
-        padding-top: 30px;
         align-self: center;
         color:#e5e5e5;
         font-size: 1.2rem;
@@ -578,6 +600,10 @@ body{
 
 @media (min-width:901px){
     .rodape_item a{
+        font-size: 1.7rem;
+    }
+
+    .subtitle {
         font-size: 1.7rem;
     }
 

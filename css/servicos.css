@@ -68,6 +68,7 @@ body{
     .divMenu{
         display: flex;
         justify-content: center;
+        padding-top:10px;
     }
 
     .menu {
@@ -527,6 +528,10 @@ background: linear-gradient(0deg, rgba(4,77,7,1) 0%, rgba(24,227,47,1) 67%, rgba
         align-items: center;  
     }
         
+    .rodape_items a {
+        font-size: 1.3rem;
+    }
+
 
     .title {
         padding: 0px;
@@ -594,8 +599,8 @@ background: linear-gradient(0deg, rgba(4,77,7,1) 0%, rgba(24,227,47,1) 67%, rgba
         padding: 0px;
     }
 
-    .voltar {
-        font-size: 1.8rem;
+    .rodape_items a {
+        font-size: 1.7rem;
     }
 
 }
